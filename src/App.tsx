@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { CourseProvider } from './context/CourseContext';
 import { ToastProvider } from './context/ToastContext';
@@ -63,7 +63,7 @@ const AppLayout: React.FC = () => {
 
 export default function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <ThemeProvider>
         <ToastProvider>
           <AuthProvider>
@@ -73,7 +73,7 @@ export default function App() {
           </AuthProvider>
         </ToastProvider>
       </ThemeProvider>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
