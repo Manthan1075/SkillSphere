@@ -30,11 +30,11 @@ const AppLayout: React.FC = () => {
       {!isClassroom && <Navbar />}
       <main className="flex-1">
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/courses" element={<CoursesPage />} />
-          <Route path="/courses/:id" element={<CourseDetailsPage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/signup" element={<SignupPage />} />
+          <Route path="/SkillSphere" element={<HomePage />} />
+          <Route path="/SkillSphere/courses" element={<CoursesPage />} />
+          <Route path="/SkillSphere/courses/:id" element={<CourseDetailsPage />} />
+          <Route path="/SkillSphere/login" element={<LoginPage />} />
+          <Route path="/SkillSphere/signup" element={<SignupPage />} />
           <Route
             path="/dashboard"
             element={
@@ -51,8 +51,8 @@ const AppLayout: React.FC = () => {
               </ProtectedRoute>
             }
           />
-          <Route path="/wishlist" element={<WishlistPage />} />
-          <Route path="/about" element={<AboutPage />} />
+          <Route path="/SkillSphere/wishlist" element={<WishlistPage />} />
+          <Route path="/SkillSphere/about" element={<AboutPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
