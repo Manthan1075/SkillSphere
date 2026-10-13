@@ -98,10 +98,11 @@ export const Navbar: React.FC = () => {
   return (
     <>
       <header
-        className={`sticky top-0 z-40 w-full transition-all duration-200 ${isScrolled
-          ? 'bg-white/85 dark:bg-slate-950/85 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800 shadow-xs'
-          : 'bg-white dark:bg-slate-950 border-b border-slate-100 dark:border-slate-800/60'
-          }`}
+        className={`sticky top-0 z-40 w-full transition-all duration-200 ${
+          isScrolled
+            ? 'bg-white/85 dark:bg-slate-950/85 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800 shadow-xs'
+            : 'bg-white dark:bg-slate-950 border-b border-slate-100 dark:border-slate-800/60'
+        }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 sm:h-20">
