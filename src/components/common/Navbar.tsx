@@ -127,7 +127,7 @@ export const Navbar: React.FC = () => {
                 <NavLink to="/SkillSphere" className={navLinkClasses} end>
                   Home
                 </NavLink>
-                <NavLink to="/courses" className={navLinkClasses}>
+                <NavLink to="SkillSphere/courses" className={navLinkClasses}>
                   Courses
                 </NavLink>
 
