@@ -42,6 +42,7 @@ export const Footer: React.FC = () => {
               >
                 <Instagram className="w-4 h-4" />
               </a>
+
               <a
                 href="https://www.facebook.com/share/1HiRSgpjBG"
                 target="_blank"
