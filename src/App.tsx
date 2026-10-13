@@ -30,7 +30,7 @@ const AppLayout: React.FC = () => {
       {!isClassroom && <Navbar />}
       <main className="flex-1">
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/SkillSphere" element={<HomePage />} />
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/courses/:id" element={<CourseDetailsPage />} />
           <Route path="/login" element={<LoginPage />} />

@@ -12,7 +12,7 @@ export const NotFoundPage: React.FC = () => {
         title="404 - Page Not Found"
         description="The page you are trying to visit does not exist or has been moved."
         actionText="Back to Homepage"
-        onAction={() => navigate('/')}
+        onAction={() => navigate('/SkillSphere')}
       />
     </div>
   );
