@@ -50,5 +50,6 @@ export const Button: React.FC<ButtonProps> = ({
       <span className="truncate">{children}</span>
       {!isLoading && rightIcon && <span className="shrink-0">{rightIcon}</span>}
     </button>
+  
   );
 };
