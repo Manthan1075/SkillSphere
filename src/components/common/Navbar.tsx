@@ -90,20 +90,18 @@ export const Navbar: React.FC = () => {
   };
 
   const navLinkClasses = ({ isActive }: { isActive: boolean }) =>
-    `text-sm font-semibold transition-colors py-1 ${
-      isActive
-        ? 'text-indigo-600 dark:text-indigo-400'
-        : 'text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white'
+    `text-sm font-semibold transition-colors py-1 ${isActive
+      ? 'text-indigo-600 dark:text-indigo-400'
+      : 'text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white'
     }`;
 
   return (
     <>
       <header
-        className={`sticky top-0 z-40 w-full transition-all duration-200 ${
-          isScrolled
+        className={`sticky top-0 z-40 w-full transition-all duration-200 ${isScrolled
             ? 'bg-white/85 dark:bg-slate-950/85 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800 shadow-xs'
             : 'bg-white dark:bg-slate-950 border-b border-slate-100 dark:border-slate-800/60'
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 sm:h-20">
